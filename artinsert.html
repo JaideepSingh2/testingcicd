@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert into Artwork</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("artinsert.jpg");
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            padding: 20px 40px; /* Further reduced padding */
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 80%; /* Reduced width from 90% to 80% */
+            max-width: 540px; /* Reduced from 600px by 10% */
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            color: #3366cc;
+            font-size: 29px; /* Increased font size */
+            border-bottom: 2px solid #3366cc;
+            padding-bottom: 13px; /* Increased padding */
+            margin-bottom: 27px; /* Increased margin */
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #3366cc;
+            margin: 27px 0; /* Increased margin */
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 17px; /* Increased font size */
+            font-family: 'Verdana', sans-serif;
+            margin-bottom: 5px; /* Increased margin */
+            display: block;
+        }
+
+        input[type=text] {
+            width: 100%;
+            padding: 7px; /* Increased padding */
+            margin-bottom: 7px; /* Increased margin */
+            border: 2px solid #ccc;
+            border-radius: 5px; /* Increased border radius */
+            font-size: 13px; /* Increased font size */
+            box-sizing: border-box;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px; /* Increased margin */
+        }
+
+        .btn {
+            padding: 9px 17px; /* Increased padding */
+            margin: 0 5px; /* Increased margin */
+            border: none;
+            border-radius: 5px; /* Increased border radius */
+            font-size: 12px; /* Increased font size */
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .registerbtn {
+            background-color: #3366cc;
+            color: #fff;
+        }
+
+        .registerbtn:hover {
+            background-color: #254e7f;
+        }
+
+        .registerbtn1 {
+            background-color: #ff3333;
+            color: #fff;
+        }
+
+        .registerbtn1:hover {
+            background-color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <form action="artinsert.php" method="POST">
+        <label for="E_ID">Exhibition ID</label>
+        <input type="text" placeholder="Enter Exhibition ID" name="E_ID" required>
+
+        <label for="G_ID">Gallery ID</label>
+        <input type="text" placeholder="Enter Gallery ID" name="G_ID" required>
+
+        <label for="custid">Customer ID</label>
+        <input type="text" placeholder="Enter Customer ID" name="custid" required>
+
+        <label for="artid">Artwork ID</label>
+        <input type="text" placeholder="Enter Art ID" name="artid" required>
+
+        <label for="artistid">Artist ID</label>
+        <input type="text" placeholder="Enter Artist ID" name="artistid" required>
+
+        <label for="title">Title of Art</label>
+        <input type="text" placeholder="Enter Title of Art" name="title" required>
+
+        <label for="type_of_art">Type of Art</label>
+        <input type="text" placeholder="Enter Type of Art" name="type_of_art" required>
+
+        <label for="year">Published Year</label>
+        <input type="text" placeholder="Enter Published Year" name="year" required>
+
+        <label for="price">Price of Art</label>
+        <input type="text" placeholder="Enter Price of Art" name="price" required>
+        
+        <hr>
+
+        <div class="btn-container">
+            <button type="submit" class="btn registerbtn">SUBMIT</button>
+            <button type="reset" class="btn registerbtn1">RESET</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

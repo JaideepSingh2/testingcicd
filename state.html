@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State</title>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <style>
+        body {
+            background: url("state.jpg") no-repeat;
+            background-size: cover;
+            font-family: "Open Sans", sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 50.5px; /* Increased font size by 0.5 pixels */
+            color: beige; /* Changed color to beige */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 2rem;
+            margin-bottom: 70px; /* Increased margin bottom */
+            text-align: center;
+            position: relative;
+            line-height: 1.2; /* Adjusted line height */
+            text-decoration: underline; /* Underline the heading */
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            max-width: 800px;
+            text-align: left; /* Align buttons to the left */
+        }
+        li {
+            margin-bottom: 10px; /* Reduced margin */
+        }
+        .option a {
+            text-decoration: none;
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            font-size: 18px; /* Decreased font size */
+            color: rgba(0, 0, 0, 0.85); /* Changed color to black with slight transparency */
+            background-color: rgba(248, 249, 250, 0.7); /* Off-white color with transparency */
+            padding: 15px 25px; /* Adjusted padding */
+            display: inline-block;
+            border-radius: 10px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .option a:hover {
+            background-color: #6c757d; /* Classic color */
+            color: #f8f9fa; /* Classic color */
+        }
+        .goback {
+            text-align: center; /* Center-align the Go Back button */
+            margin-top: 30px; /* Increased margin top */
+        }
+        .goback a {
+            display: inline-block;
+            padding: 10px 20px; /* Adjusted padding */
+            background-color: rgba(248, 249, 250, 0.7); /* Same color as the other buttons */
+            color: rgba(0, 0, 0, 0.85); /* Same color as the other buttons */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .goback a:hover {
+            background-color: #6c757d; /* Classic color */
+            color: #f8f9fa; /* Classic color */
+        }
+    </style>
+</head>
+<body>
+    <h1><span style="font-size: 53px;">State</span></h1> <!-- Increased font size by 0.5 pixels -->
+    <ul>
+        <li class="option"><a href="Sinsert.html">Insert Values into the State</a></li> <!-- Updated href attribute -->
+        <li class="option"><a href="ssearch.php">Search Values from the State</a></li>
+        <li class="option"><a href="sdisplay.php">Display Values from the State Table</a></li>
+        <li class="option" style="margin-bottom: 20px;"><a href="sdelete.php">Delete Values from the State</a></li> <!-- Increased margin-bottom -->
+    </ul>
+    <div class="goback">
+        <a href="FrontEnd.html">Go Back</a>
+    </div>
+</body>
+</html>
