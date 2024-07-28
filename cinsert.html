@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insertion Customer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.67">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('cinsert-background.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            padding: 16px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+            width: 70%; /* Adjusted width */
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            color: #3366cc;
+            font-size: 18px; /* Decreased font size */
+            border-bottom: 2px solid #3366cc;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #3366cc;
+            margin: 12px 0;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 14px; /* Decreased font size */
+            font-family: 'Verdana', sans-serif;
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        input[type=text], input[type=tel], input[type=number], input[type=date] {
+            width: 100%;
+            padding: 6px;
+            margin-bottom: 6px;
+            border: 2px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px; /* Decreased font size */
+            box-sizing: border-box;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 12px;
+        }
+
+        .btn {
+            padding: 8px 14px;
+            margin: 0 6px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px; /* Decreased font size */
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .registerbtn {
+            background-color: #3366cc;
+            color: #fff;
+        }
+
+        .registerbtn:hover {
+            background-color: #254e7f;
+        }
+
+        .registerbtn1 {
+            background-color: #ff3333;
+            color: #fff;
+        }
+
+        .registerbtn1:hover {
+            background-color: #cc0000;
+        }
+
+        /* Adjusted styles for the new address fields */
+        .address-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1px 0; /* Reduced vertical gap */
+        }
+
+        .address-container label {
+            font-size: 14px; /* Decreased font size */
+        }
+
+        .address-container input {
+            padding: 6px;
+            font-size: 14px; /* Decreased font size */
+        }
+    </style>
+</head>
+<body>
+
+<form action="cinsert.php" method="POST" class="container">
+    <hr>
+
+    <label for="custid">Customer ID</label>
+    <input type="text" placeholder="Enter Customer ID" name="custid" required>
+
+    <label for="fname">Customer's First Name</label>
+    <input type="text" placeholder="Enter First Name" name="fname" required>
+
+    <label for="lname">Customer's Last Name</label>
+    <input type="text" placeholder="Enter Last Name" name="lname" required>
+
+    <label for="dob">Date of Birth</label>
+    <input type="date" placeholder="Enter Date of Birth" name="dob" required>
+
+    <!-- New address fields -->
+    <div class="address-container">
+        <label for="street">Street Address</label>
+        <input type="text" placeholder="Enter Street Address" name="street" required>
+
+        <label for="city">City</label>
+        <input type="text" placeholder="Enter City" name="city" required>
+    </div>
+    <label for="G_ID">Gallery ID</label>
+    <input type="text" placeholder="Enter Gallery ID" name="G_ID" required>
+    <hr>
+
+    <div class="btn-container">
+        <button type="submit" class="btn registerbtn">SUBMIT</button>
+        <button type="reset" class="btn registerbtn1">RESET</button>
+    </div>
+</form>
+
+</body>
+</html>

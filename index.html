@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ART GALLERY DATABASE</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica">
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: lavenderblush;
+            background: url("Main-background.jpg") no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .header h1 {
+            font-size: 50px;
+            color: #f7f9f9; /* Off-white color */
+            margin-top: 0;
+        }
+        
+        .menu {
+            list-style: none;
+            padding: 10px 0; /* Added padding to the top and bottom */
+            margin: 0;
+            text-align: center;
+        }
+        
+        .menu li {
+            display: inline-block;
+            margin-right: 10px; /* Adjusted margin */
+        }
+
+        .menu li:last-child {
+            margin-right: 0; /* No margin for the last item */
+        }
+        
+        .menu li a {
+            text-decoration: none;
+            color: #000; /* Black color */
+            font-size: 22px;
+            padding: 8px 13px; /* Adjusted padding */
+            border-radius: 7px; /* Squarer border radius */
+            background-color: rgba(255, 255, 255, 0.8); /* Reduced opacity */
+            transition: all 0.3s ease;
+        }
+        
+        .menu li a:hover {
+            background-color: #4a4a4a;
+            color: #fff;
+        }
+        
+        .content {
+            background-color: rgba(255, 255, 255, 0.6); /* Reduced opacity */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        
+        .content h2 {
+            color: #4a4a4a;
+            font-size: 32px;
+            margin-top: 0;
+        }
+        
+        .example1 {
+            height: 50px;    
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .example1 h3 {
+            font-size: 3em;
+            color: #ffffff;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin-top: 0px;
+            line-height: 50px;
+            text-align: center;
+            transform: translateX(100%);
+            animation: example1 11s linear infinite;
+        }
+        
+        @keyframes example1 {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>ART GALLERY MANAGEMENT SYSTEM</h1>
+        </div>
+        <ul class="menu">
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="exhibition.html">EXHIBITION</a></li>
+            <li><a href="artwork.html">ARTWORK</a></li>
+            <li><a href="customer.html">CUSTOMER</a></li>
+            <li><a href="artist.html">ARTIST</a></li>
+            <li><a href="state.html">STATE</a></li>
+            <li><a href="storedprocedures.html">PROCEDURES AND FUNCTIONS</a></li>
+        </ul>
+        <div class="content">
+            <h2>Welcome to the Art Gallery Management System!</h2>
+            <p>Our art gallery management system offers seamless organization and presentation of artworks, exhibitions, and artists' profiles. With intuitive navigation and robust features, it simplifies gallery operations, enhances customer experiences, and promotes the appreciation of art.</p>
+        </div>
+        <div class="example1">
+            <h3></h3>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
